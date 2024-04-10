@@ -1,0 +1,154 @@
+.numbers {
+    background-color: var(--background-section);
+    position: relative; // чтобы выносить стрелки и пагинацию за пределы слайдера
+    .title {
+        padding-bottom: clamp(1.25rem, 0.294rem + 4.78vw, 4.375rem);
+       
+    }
+    &__fisher {
+        position: absolute;
+        left: 0;
+        top: 25px;
+    }
+    &__container {
+        max-width: 1080px;
+        margin: 0 auto;
+        padding-inline: 20px;
+    }
+    &__box {
+        display: flex;
+    }
+    &__foto {
+        border-radius: 10px;
+    }
+    &__cards {
+        padding: 40px 0px 0px 100px;
+        display: block;
+        width: 500px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0px 0px 25px 0px rgba(208, 208, 208, 0.25);
+        position: absolute;
+        z-index: 10;
+        top: 50%;
+        margin-left: 530px;
+        translate: 0 -50%;
+        &__titles {
+            font-family: var(--font-famaly-accent);
+            font-size: 22px;
+            font-weight: 500;
+            line-height: normal;
+            margin-bottom: 35px;
+        }
+        &__spisok {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            margin-bottom: 30px;
+        }
+        &__item {
+            position: relative;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 13px;
+                border-radius: 50%;
+                aspect-ratio: 1;
+                top: 50%;
+                translate: 0 -50%;
+                background-color: #FAC663;
+                left: -20px;
+
+            }
+        }
+    }
+    &__btn {
+        background-color: #FF7236;
+        color: #fff;
+        margin-bottom: clamp(1.25rem, 0.868rem + 1.91vw, 2.5rem);
+        &::after {
+            background: url('../img/icons/lapkabtnslaid.svg');
+        }
+/*         &:hover {
+            background-color: #fff;
+            color: var(--color--text);
+        } */
+    }
+}
+
+
+
+
+//стили для слайдера  START
+
+.swiper-pagination-bullets.swiper-pagination-horizontal { // убираем отступ у пагинации
+    bottom: 0;
+}
+
+.swiper-pagination-bullet { // пагинация    
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #E1E1E1;
+    opacity: 1;
+    
+}
+
+.swiper-pagination-bullet-active { // цвет для активного пагината
+    background-color: var(--color-krug);
+}
+
+
+.swiper.number-swiper { // сдвигаем пагинацию вниз
+    padding-bottom: clamp(1.25rem, 0.581rem + 3.35vw, 3.438rem);
+}
+
+
+.slaider-buttons {
+    display: flex;
+    column-gap: 10px;
+}
+
+.numbers__navigation { // секция с пагинатами и кнопками
+    display: flex;
+}
+
+.numbers.swiper-button-next:after { // убираем основные стрелки 
+    content: '';
+}
+
+.numbers.swiper-button-prev:after { // убираем основные стрелки 
+    content: '';
+}
+
+.swiper-button-prev {
+    left: -10px;
+}
+
+
+.numbers.swiper-button-next{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: url('../img/buttons-slider/next.svg') center no-repeat;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    margin-left: 0;
+}
+
+.numbers.swiper-button-prev{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: url('../img/buttons-slider/prev.svg') center no-repeat;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+} 
+
+
+//стили для слайдера  END

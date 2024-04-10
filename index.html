@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Котейка</title>
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="scss/swiper-bundle.min.css"><!-- стили слайдера -->
+    <link rel="stylesheet" href="scss/style.css">
+</head>
+<body>
+ 
+    <section class="header">
+        <h2 class="visually-hidden">Котейка</h2>
+
+        <a class="header__logo" href="/">
+            <img class="header__logo__img" src="img/icons/logo.svg" alt="логотип котейка">
+        </a>
+
+        <nav class="header__menu">
+            <ul class="header__menu__list invisible">
+                <li class="header__menu__item"><a class="header__menu__link" href="/">Почему мы?</a></li>
+                <li class="header__menu__item"><a class="header__menu__link" href="/">Номера</a></li>
+                <li class="header__menu__item"><a class="header__menu__link" href="/">Отзывы</a></li>
+                <li class="header__menu__item"><a class="header__menu__link" href="/">Как нас найти</a></li>
+            </ul>
+        </nav>
+
+    </section>
+
+    <main class="content">
+
+        <!-- делаем меню -->
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <!-- выезжабющее меню -->
+        <div class="mobilemenu">
+            <div class="mobilemenu-close">
+                <img src="img/icons/close.svg"  class="close" alt="закрыть">
+            </div>
+                <nav class="header__menu ">
+                    <ul class="header__menu__list-mobilemenu">
+                        <li class="header__menu__item-mobilemenu"><a class="header__menu__link-mobilemenu" href="/">Почему мы?</a></li>
+                        <li class="header__menu__item-mobilemenu"><a class="header__menu__link-mobilemenu" href="/">Номера</a></li>
+                        <li class="header__menu__item-mobilemenu"><a class="header__menu__link-mobilemenu" href="/">Отзывы</a></li>
+                        <li class="header__menu__item-mobilemenu"><a class="header__menu__link-mobilemenu" href="/">Как нас найти</a></li>
+                    </ul>
+                </nav>   
+            </div>
+        </div>
+
+        <div class="banner">
+            <div class="banner__block">
+                <div class="banner__gorod">
+                    Санкт-Петербург
+                </div>
+
+                <div class="banner__title">
+                    Котейка
+                </div>
+
+                <div class="banner__descr">
+                    Уютная гостиница для котов и кошек
+                </div>
+
+                <a class="def__btn" href="/">Забронировать</a>
+                
+            </div>
+        </div>
+
+        <div class="why">
+            <h3 class="title">Почему мы?</h3>
+
+            <div class="why__box">
+
+                <div class="why__grid">
+
+                    <div class="why__grid__item">
+
+                        <div class="why__grid__img">
+                            <img class="why__grid__icon" src="./img/icons/temperatyra.svg" alt="температура">
+                        </div>
+
+                        <div class="why__grid__titles">
+                            Комфортная температура
+                        </div>
+
+                        <div class="why__grid__descr">
+                            Во всех номерах поддерживается комфортная температура в пределах<br>
+                            23 - 25 градусов. В каждом номере можно дополнительно отрегулировать температуру. 
+                        </div>
+
+                    </div>
+
+                    <div class="why__grid__item">
+
+                        <div class="why__grid__img">
+                            <img class="why__grid__icon" src="./img/icons/video.svg" alt="видеонаблюдение">
+                        </div>
+
+                        <div class="why__grid__titles">
+                            Видеонаблюдение
+                        </div>
+
+                        <div class="why__grid__descr">
+                            Мы предоставляем доступ в нашу систему. Вы сможете следить
+                            за своим питомцем со своего смартфона или компьютера.
+                        </div>
+
+                    </div>
+
+
+                    <div class="why__grid__item">
+
+                        <div class="why__grid__img">
+                            <img class="why__grid__icon" src="./img/icons/taxi.svg" alt="зоотакси">
+                        </div>
+
+                        <div class="why__grid__titles">
+                            Услуги Зоотакси
+                        </div>
+
+                        <div class="why__grid__descr">
+                            Мы приедем за вашим питомцем <br>
+                            в любой район Санкт-Петербурга.
+                        </div>
+
+                    </div>
+
+                    <div class="why__grid__item">
+
+                        <div class="why__grid__img">
+                            <img class="why__grid__icon" src="./img/icons/pitanie.svg" width="53" style="filter: invert(1);" alt="сбалансированное питания">
+                        </div>
+
+                        <div class="why__grid__titles">
+                            Сбалансированное питания
+                        </div>
+
+                        <div class="why__grid__descr">
+                            Вы можете привезти свой корм
+                            или доверить рацион своего
+                            питомца нашим профессионалам.
+                        </div>
+
+                    </div>
+
+                    <div class="why__grid__item">
+
+                        <div class="why__grid__img">
+                            <img class="why__grid__icon" src="./img/icons/progulki.svg" alt="ежедневные прогулки">
+                        </div>
+
+                        <div class="why__grid__titles">
+                            Ежедневные прогулки
+                        </div>
+
+                        <div class="why__grid__descr">
+                            По вашему желанию мы выгуливаем вашего питомца два раза в день
+                            на специализированной закрытой территории.
+                        </div>
+
+                    </div>
+
+                    <div class="why__grid__item">
+
+                        <div class="why__grid__img">
+                            <img class="why__grid__icon" src="./img/icons/the_best.svg" alt="лучшие ветеринары">
+                        </div>
+
+                        <div class="why__grid__titles">
+                            Лучшие ветеринары
+                        </div>
+
+                        <div class="why__grid__descr">
+                            В гостинице 24 часа дежурит ветеринарный врач, который окажет любую помощь в случае необходимости.
+                        </div>
+
+                    </div>
+
+                   <img class="why__lapka" src="./img/icons/lapka.svg" alt="лампка"> <!-- лапка -->
+
+                </div>
+
+            </div>
+
+            
+        </div>
+
+        <div class="numbers">
+
+            <div class="title">Номера</div>
+
+            <div class="numbers__fisher"> <!-- рыбка задний фон -->
+                <img src="./img/icons/fish.svg" alt="рыбка">
+            </div>
+
+            <div class="numbers__container"> <!-- контейнер для слайдера -->
+                
+                <div class="swiper number-swiper"> <!-- даем имя слайдеру number-swiper -->
+
+                        <div class="swiper-wrapper"> <!-- обертка самого слайда -->
+
+                            <!-- Слайд 1 -->
+                            <div class="swiper-slide">
+
+                                <div class="numbers__box">
+
+                                    <div class="numbers__boxfoto">
+                                        <img class="numbers__foto" src="img/slaidkot1.jpg" alt="кот" width="600" height="404" >
+                                    </div>
+                                
+                                    <div class="numbers__cards">
+                                        <div class="numbers__cards__titles">Эконом плюс</div>
+                                        
+                                        <ul class="numbers__cards__spisok">
+                                            <li class="numbers__cards__item">Площадь - 0,90 м2</li>
+                                            <li class="numbers__cards__item">Размеры (ШхГхВ) — 90х100х180 см</li>
+                                            <li class="numbers__cards__item">Цена за сутки: 200₽</li>
+                                        </ul>
+                                        
+                                        <a class="def__btn numbers__btn" href="/">Забронировать</a>
+                                    
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- Слайд 2 -->
+                            <div class="swiper-slide">
+
+                                <div class="numbers__box">
+
+                                    <div class="numbers__boxfoto">
+                                        <img class="numbers__foto" src="img/slaidkot2.jpg" alt="кот" width="600" height="404" >
+                                    </div>
+                                
+                                    <div class="numbers__cards">
+                                        <div class="numbers__cards__titles">Стандарт плюс</div>
+                                        
+                                        <ul class="numbers__cards__spisok">
+                                            <li class="numbers__cards__item">Площадь - 2 м2</li>
+                                            <li class="numbers__cards__item">Размеры (ШхГхВ) — 90х120х280 см</li>
+                                            <li class="numbers__cards__item">Цена за сутки: 400₽</li>
+                                        </ul>
+                                        
+                                        <a class="def__btn numbers__btn" href="/">Забронировать</a>
+                                    
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Слайд 3 -->
+                            <div class="swiper-slide">
+
+                                <div class="numbers__box">
+
+                                    <div class="numbers__boxfoto">
+                                        <img class="numbers__foto" src="img/slaidkot3.jpg" alt="кот" width="600" height="404" >
+                                    </div>
+                                
+                                    <div class="numbers__cards">
+                                        <div class="numbers__cards__titles">Премиум плюс</div>
+                                        
+                                        <ul class="numbers__cards__spisok">
+                                            <li class="numbers__cards__item">Площадь - 5 м2</li>
+                                            <li class="numbers__cards__item">Размеры (ШхГхВ) — 190х220х480 см</li>
+                                            <li class="numbers__cards__item">Цена за сутки: 800₽</li>
+                                        </ul>
+                                        
+                                        <a class="def__btn numbers__btn" href="/">Забронировать</a>
+                                    
+                                    </div>
+
+                                </div>
+
+                            </div>
+            
+                        </div>
+                </div>
+
+                <!-- навигация выносим за пределы -->
+                <div class="numbers__navigation">
+
+                    <div class="swiper-pagination numbers"></div>
+            
+                    <div class="slaider-buttons">
+                        <div class="numbers swiper-button-prev"></div>
+                        <div class="numbers swiper-button-next"></div> 
+                    </div>
+
+                </div>
+
+            </div>
+           
+
+     
+        </div>
+
+
+        <div class="otzivi">
+
+            <div class="title">Отзывы</div>
+            
+            <div class="otzivi__backroundlapa">
+                <img src="./img/icons/lapka.svg" alt="лампка">
+            </div>
+
+            <div class="otzivi__container">
+
+                <div class="swiper otzivi-swiper"> <!-- даем имя слайдеру otzivi-swaiper  -->
+                 
+                    <div class="swiper-wrapper "> 
+                     
+
+                        <div class="swiper-slide "><!-- слайд №1 -->
+
+                            <div class="otzivi__row">
+
+                                <div class="otzivi__item">
+                                    <div class="otzivi__descr">
+                                        Первый раз пришлось оставить нашего котика
+                                        в гостинице, очень переживали. 
+                                        Администратор Мария каждый день высылала нам
+                                        фото нашего питомца, рассказывала, как он себя чувствует.
+                                        И мы и котик остались очень довольны!
+                                    </div>
+
+                                    <div class="otzivi__box">
+                                        <div class="otzivi__box__name">Валерия Гришаева</div>
+                                        <div class="otzivi__box__date">15 ноября, 2021</div>
+                                    </div>
+
+                                </div>
+                                
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-slide"><!-- слайд №2-->
+
+                            <div class="otzivi__row">
+
+                            <div class="otzivi__item">
+                                <div class="otzivi__descr">
+                                    Гостиницу для питомцев нам посоветовали друзья. 
+                                    Они всегда оставляют здесь своего кота, когда уезжают. 
+                                    В “Котейке” очень хорошо заботятся о питомцах, в гостинице очень чисто. 
+                                    Всем рекомендую! Будем обращаться еще.
+                                </div>
+
+                                <div class="otzivi__box">
+                                    <div class="otzivi__box__name">Екатерина Минаева</div>
+                                    <div class="otzivi__box__date">10 октября, 2022</div>
+                                </div>
+
+                            </div>
+                            
+                        </div>
+
+                        </div>
+
+                        <div class="swiper-slide"><!-- слайд №3-->
+
+                            <div class="otzivi__row">
+
+                            <div class="otzivi__item">
+                                <div class="otzivi__descr">
+                                    Мой кот — настоящая привереда, угодить ему сложно. 
+                                    У меня были особые требования к уходу за ним, 
+                                    и “Котейка” отлично справились. Я часто наблюдал
+                                    по видео за питомцем со своего телефона, это очень удобно. 
+                                </div>
+
+                                <div class="otzivi__box">
+                                    <div class="otzivi__box__name">Павел Нечаев</div>
+                                    <div class="otzivi__box__date">12 ноября, 2023</div>
+                                </div>
+
+                            </div>
+                            
+                        </div>
+
+                        </div>
+
+                        <div class="swiper-slide "><!-- слайд №4 -->
+
+                            <div class="otzivi__row">
+
+                            <div class="otzivi__item">
+                                <div class="otzivi__descr">
+                                    Отличная гостиница. Буду еще обращаться
+                                    С котиком обращались на высшем уровне
+                                    Все очень понравилось.<br>
+                                    Будем еще обращаться обязательно.<br>
+                                    Рекомендую.
+                                </div>
+
+                                <div class="otzivi__box">
+                                    <div class="otzivi__box__name">Дмитрий Иванов</div>
+                                    <div class="otzivi__box__date">10 января, 2024</div>
+                                </div>
+
+                            </div>
+                            
+                        </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="otzivi__navigation">
+
+                    <div class="swiper-pagination otzivi"></div>
+            
+                    <div class="slaider-buttons">
+                        <div class="otzivi swiper-button-prev"></div>
+                        <div class="otzivi swiper-button-next"></div> 
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div class="search">
+            <div class="search__wrapper">
+                <div class="search__left">
+                    
+                    <div class="search__title">Как нас найти</div>
+
+                    <div class="search__item">
+                        <div class="search__item__title">Адрес</div>
+                        <div class="search__item__descr">
+                            Санкт-Петербург,<br>
+                            ул Большая Конюшенная, д 19
+                        </div>
+                    </div>
+
+                    <div class="search__item">
+                        <div class="search__item__title">Режим работы</div>
+                        <div class="search__item__descr">
+                            Ежедневно, с 9:00 до 20:00
+                        </div>
+                    </div>
+
+                    <div class="search__item">
+                        <div class="search__item__title">Телефон</div>
+                        <div class="search__item__descr">
+                            <a href="tel:880033355-99">8 (800) 333-55-99</a>
+                        </div>
+                    </div>
+
+                    <div class="search__item">
+                        <div class="search__item__title">E-mail</div>
+                        <div class="search__item__descr">
+                            <a href="mailto:info@cat-hotel.ru">info@cat-hotel.ru</a>
+                        </div>
+                    </div>
+
+
+                    <div class="search__item">
+                        <div class="search__item__title">Социальные сети</div>
+                            <div class="search__item__socials">
+
+                                <div class="search__item__bg">
+                                    <a class="search__item__faceebook" target="_blank" href="/">
+                                        <img class="search__item__img" src="./img/icons/social/facebook.svg" alt="facebook">
+                                    </a>
+                                </div>
+
+                                <div class="search__item__bg">
+                                    <a class="search__item__instagram " target="_blank" href="/">
+                                        <img class="search__item__img" src="./img/icons/social/instagram.svg" alt="instagram">
+                                    </a>
+                                </div>
+                              
+
+                                <div class="search__item__bg">
+                                    <a class="search__item__vk" target="_blank" href="/">
+                                        <img class="search__item__img" src="./img/icons/social/vk.svg" alt="vk">
+                                    </a>
+                                </div>
+
+                            </div>
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="search__right">
+                    <iframe class="search__right__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A44508674cff3fec1a4baea93083fe85454b15680635e4c703bb8541bc90d22fb&amp;source=constructor"  ></iframe>
+                </div>
+            </div>
+        </div>
+
+
+        
+    </main>
+
+    <div class="footer">
+
+        <a class="header__logo " href="/">
+            <img class="header__logo__img" src="img/icons/logo.svg" alt="логотип котейка">
+        </a>
+
+        <nav class="header__menu">
+            <ul class="header__menu__list">
+                <li class="header__menu__item"><a class="header__menu__link" href="/">Почему мы?</a></li>
+                <li class="header__menu__item"><a class="header__menu__link" href="/">Номера</a></li>
+                <li class="header__menu__item"><a class="header__menu__link" href="/">Отзывы</a></li>
+                <li class="header__menu__item"><a class="header__menu__link" href="/">Как нас найти</a></li>
+            </ul>
+
+        </nav>
+
+    </div>
+
+    <div class="politika">
+        <div class="politika__wrapper">
+            <div class= "politika__icon"><img src="./img/icons/copyright.svg" alt="copyright"></div>
+            <div class= "politika__descr">2024 Все права защищены</div>
+        </div>
+
+        <div class="politika__right">Политика конфиденциальности</div>
+    </div>
+  
+    <script src="js/swaiper.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

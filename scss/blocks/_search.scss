@@ -1,0 +1,55 @@
+.search {
+    &__wrapper {
+        display: flex;
+    }
+    &__title {
+        font-family: var(--font-famaly-accent);
+        font-size: clamp(1.25rem, 0.944rem + 1.53vw, 2.25rem);
+        font-weight: 700;
+        margin-bottom: clamp(1.25rem, 0.676rem + 2.87vw, 3.125rem);
+    }
+    &__left {
+        padding-block: 70px;
+        padding-left: 200px;
+        background-color: var(--color-krug);
+        width: 40%;
+       
+    }
+    &__item {
+        &:nth-last-child(n+2) {
+            margin-bottom: 35px;
+        }
+        &__title {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        &__descr {
+            font-size: 16px;
+            line-height: normal;
+        }
+        &__socials {
+            display: flex;
+            column-gap: 20px;
+        }
+        &__bg {
+            background-color: rgba(26, 33, 47, 1);
+            border-radius: 50%;
+            width: 35px;
+            aspect-ratio: 1;
+            position: relative;
+        }
+        &__img {
+            position: absolute;
+            width: 22px;
+            filter: invert(1);
+            top: 50%;
+            left: 50%;
+            translate: -50% -50%;
+        }
+
+    }
+    &__right {
+        width: 60%;
+    }
+}

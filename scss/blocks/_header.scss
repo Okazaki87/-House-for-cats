@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-inline: 98px;
+    &__logo {
+        padding-block: 12px;
+    }
+    &__menu {
+        &__list {
+            display: flex;
+            column-gap: 30px;
+        }
+        &__link {
+            font-weight: 600;
+            line-height: normal;
+            transition: color var(--plavnay-animacia);
+            &:hover {
+                color:#f39708;
+            }
+        }
+    }
+
+  
+}

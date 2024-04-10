@@ -1,0 +1,23 @@
+.banner {
+    background: url('../img/header_banner.jpg') center / cover no-repeat;
+    &__block {
+        padding-block: clamp(1.875rem, -0.472rem + 11.74vw, 9.563rem);
+        padding-left: clamp(0.625rem, -3.001rem + 18.13vw, 12.5rem);
+    }
+    &__gorod {
+        font-size: 14px;
+        padding-bottom: 15px;
+    }
+    &__title {
+        font-family: var(--font-famaly-accent);
+        font-size: clamp(1.875rem, 1.264rem + 3.05vw, 3.875rem);
+        font-weight: 700;
+        margin-bottom: 25px;
+    }
+    &__descr {
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 40px;
+    }
+
+}

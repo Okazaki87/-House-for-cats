@@ -1,0 +1,99 @@
+.otzivi {
+    background-color: var(--background-section);
+    position: relative;
+    .title {
+        padding-top: clamp(1.25rem, -1.236rem + 12.43vw, 9.375rem);
+        padding-bottom: clamp(1.25rem, 0.294rem + 4.78vw, 4.375rem);
+    }
+    &__backroundlapa {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    &__container {
+        max-width: 1080px;
+        margin: 0 auto;
+        padding-inline: 20px;
+        padding-bottom: clamp(1.25rem, -1.236rem + 12.43vw, 9.375rem);
+    }
+    &__descr {
+        max-width: 362px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.4;
+        padding-bottom: 25px;
+        &::before {
+            content: '“';
+            font-size: 72px;
+            color: var(--color-krug);
+            position: absolute;
+            top: 15px;
+            left: 40px;
+        }
+    }
+
+    &__item {
+        position: relative;
+        margin-right: 0;
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0px 0px 25px 0px rgba(208, 208, 208, 0.25);
+        padding: 35px 40px 35px 70px;
+    }
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        &__name {
+            color: #848484;
+            font-size: 14px;
+            line-height: normal;
+        }
+        &__date {
+            color: #848484;
+            font-size: 14px;
+            line-height: normal;  
+        }
+
+    }
+
+}
+
+
+/* СЛАЙДЕР START  */
+
+.otzivi__navigation {
+    display: flex;
+}
+
+.otzivi.swiper-button-next:after { // убираем основные стрелки 
+    content: '';
+}
+
+.otzivi.swiper-button-prev:after { // убираем основные стрелки 
+    content: '';
+}
+
+.otzivi.swiper-button-next{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: url('../img/buttons-slider/next.svg') center no-repeat;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    margin-left: 0;
+}
+
+.otzivi.swiper-button-prev{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: url('../img/buttons-slider/prev.svg') center no-repeat;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+} 
+
+.swiper.otzivi-swiper { //отступ пагинации
+    margin-bottom: clamp(1.25rem, 0.581rem + 3.35vw, 3.438rem);
+}
+
+/* СЛАЙДЕР END  */

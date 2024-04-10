@@ -1,0 +1,19 @@
+.politika{
+    padding-block: 20px;
+    display: flex;
+    padding-inline: 98px;
+    justify-content: space-between;
+    &__wrapper {
+        display: flex;
+        column-gap: 5px;
+        align-items: center;
+    }
+    &__descr {
+        color: #8F8F8F;
+        font-size: 12px;
+    }
+    &__right {
+        color: #8F8F8F;
+        font-size: 12px; 
+    }
+}
