@@ -42,15 +42,34 @@
     }
 
 }
-.header__menu__item-mobilemenu {
-    a {
-        color: #fff;
-        &:hover {
-            color: #000;
-            transition: color var(--plavnay-animacia) ease;
+
+
+// --- START для мобил, чтобы не было залипаний на ссылке  ---
+@media (hover: hover) {
+    .header__menu__item-mobilemenu {
+        a {
+            color: #fff;
+            &:hover {
+                color: #000;
+                transition: color var(--plavnay-animacia) ease;
+            }
         }
     }
 }
+
+@media (hover: none) {
+    .header__menu__item-mobilemenu {
+        a {
+            color: #fff;
+            &:active {
+                color: #000;
+                transition: color var(--plavnay-animacia) ease;
+            }
+        }
+    }
+}
+
+// --- END ---
 
 .header__menu__link-mobilemenu {
     font-size: 20px;
