@@ -9,7 +9,41 @@
     <link rel="stylesheet" href="scss/style.css">
 </head>
 <body>
- 
+
+    <!-- модальное окно START -->
+    <div class="modal">
+
+        <img class="modal__close" src="./img/icons/closemodal.svg" alt="close">
+        <div class="modal__title">Забронировать номер</div>
+
+        <form class="modal__form">
+
+            <div class="modal__body">
+
+                <label class="visually-hidden" for="username" >Имя</label>
+                <input class="modal__userinput" type="text" id="username" required placeholder="Ваше имя">
+    
+                <label class="visually-hidden" for="userpitomes">Имя питомца</label>
+                <input class="modal__userpitomes" type="text" id="userpitomes" required placeholder="Имя питомца">
+
+                <label class="visually-hidden" for="userphone">Телефон</label>
+                <input class="modal__usernumber" type="number" id="userphone" required placeholder="Ваш телефон">
+
+                <label class="visually-hidden" for="useremail">Email</label>
+                <input class="modal__useremail" type="email" id="useremail" required placeholder="Email">
+    
+                <button class="modal__btn" type="submit">Отправить заявку</button>
+
+            </div>
+
+        </form>
+
+        <img class="modal__lapka" src="./img/icons/modalbg_lapka.svg">
+        
+    </div>
+    <!-- модальное окно END -->
+
+
     <section class="header">
         <h2 class="visually-hidden">Котейка</h2>
 
@@ -19,10 +53,10 @@
 
         <nav class="header__menu">
             <ul class="header__menu__list invisible">
-                <li class="header__menu__item"><a class="header__menu__link" href="/">Почему мы?</a></li>
-                <li class="header__menu__item"><a class="header__menu__link" href="/">Номера</a></li>
-                <li class="header__menu__item"><a class="header__menu__link" href="/">Отзывы</a></li>
-                <li class="header__menu__item"><a class="header__menu__link" href="/">Как нас найти</a></li>
+                <li class="header__menu__item"><a class="header__menu__link whysection" href="/">Почему мы?</a></li>
+                <li class="header__menu__item"><a class="header__menu__link nomera" href="/">Номера</a></li>
+                <li class="header__menu__item"><a class="header__menu__link otzivi" href="/">Отзывы</a></li>
+                <li class="header__menu__item"><a class="header__menu__link poisk" href="/">Как нас найти</a></li>
             </ul>
         </nav>
 
@@ -44,16 +78,22 @@
             </div>
                 <nav class="header__menu ">
                     <ul class="header__menu__list-mobilemenu">
-                        <li class="header__menu__item-mobilemenu"><a class="header__menu__link-mobilemenu" href="/">Почему мы?</a></li>
-                        <li class="header__menu__item-mobilemenu"><a class="header__menu__link-mobilemenu" href="/">Номера</a></li>
-                        <li class="header__menu__item-mobilemenu"><a class="header__menu__link-mobilemenu" href="/">Отзывы</a></li>
-                        <li class="header__menu__item-mobilemenu"><a class="header__menu__link-mobilemenu" href="/">Как нас найти</a></li>
+
+                        <li class="header__menu__item-mobilemenu"><a class="header__menu__link-mobilemenu whysection " 
+                            href="/">Почему мы?</a></li>
+                        <li class="header__menu__item-mobilemenu"><a class="header__menu__link-mobilemenu nomera"
+                             href="/">Номера</a></li>
+                        <li class="header__menu__item-mobilemenu"><a class="header__menu__link-mobilemenu otzivi" 
+                            href="/">Отзывы</a></li>
+                        <li class="header__menu__item-mobilemenu"><a class="header__menu__link-mobilemenu poisk" 
+                            href="/">Как нас найти</a></li>
                     </ul>
+
                 </nav>   
             </div>
         </div>
 
-        <div class="banner">
+        <section class="banner">
             <div class="banner__block">
                 <div class="banner__gorod">
                     Санкт-Петербург
@@ -67,12 +107,12 @@
                     Уютная гостиница для котов и кошек
                 </div>
 
-                <a class="def__btn" href="/">Забронировать</a>
+                <a class="def__btn">Забронировать</a>
                 
             </div>
-        </div>
+        </section>
 
-        <div class="why">
+        <section class="why">
             <h3 class="title">Почему мы?</h3>
 
             <div class="why__box">
@@ -189,9 +229,9 @@
             </div>
 
             
-        </div>
+        </section>
 
-        <div class="numbers">
+        <section class="numbers">
 
             <div class="title">Номера</div>
 
@@ -303,10 +343,10 @@
            
 
      
-        </div>
+        </section>
 
 
-        <div class="otzivi">
+        <section class="otzivi">
 
             <div class="title">Отзывы</div>
             
@@ -399,8 +439,8 @@
                                 <div class="otzivi__descr">
                                     Отличная гостиница. Буду еще обращаться
                                     С котиком обращались на высшем уровне
-                                    Все очень понравилось.<br>
-                                    Будем еще обращаться обязательно.<br>
+                                    Все очень понравилось. 
+                                    Кормили как и просили строго по времени.<br>
                                     Рекомендую.
                                 </div>
 
@@ -430,9 +470,9 @@
                 
             </div>
 
-        </div>
+        </section>
 
-        <div class="search">
+        <section class="search">
             <div class="search__wrapper">
                 <div class="search__left">
                     
@@ -503,13 +543,13 @@
                     <iframe class="search__right__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A44508674cff3fec1a4baea93083fe85454b15680635e4c703bb8541bc90d22fb&amp;source=constructor"  ></iframe>
                 </div>
             </div>
-        </div>
+        </section>
 
 
         
     </main>
 
-    <div class="footer">
+    <section class="footer">
 
         <a class="header__logo " href="/">
             <img class="header__logo__img" src="img/icons/logo.svg" alt="логотип котейка">
@@ -517,15 +557,15 @@
 
         <nav class="header__menu">
             <ul class="header__menu__list">
-                <li class="header__menu__item"><a class="header__menu__link" href="/">Почему мы?</a></li>
-                <li class="header__menu__item"><a class="header__menu__link" href="/">Номера</a></li>
-                <li class="header__menu__item"><a class="header__menu__link" href="/">Отзывы</a></li>
-                <li class="header__menu__item"><a class="header__menu__link" href="/">Как нас найти</a></li>
+                <li class="header__menu__item"><a class="header__menu__link whysection" href="/">Почему мы?</a></li>
+                <li class="header__menu__item"><a class="header__menu__link nomera" href="/">Номера</a></li>
+                <li class="header__menu__item"><a class="header__menu__link otzivi" href="/">Отзывы</a></li>
+                <li class="header__menu__item"><a class="header__menu__link poisk" href="/">Как нас найти</a></li>
             </ul>
 
         </nav>
 
-    </div>
+    </section>
 
     <div class="politika">
         <div class="politika__wrapper">
@@ -535,7 +575,9 @@
 
         <div class="politika__right">Политика конфиденциальности</div>
     </div>
-  
+
+    <div class="modal__overlay"></div> <!-- задний фон белый -->
+
     <script src="js/swaiper.js"></script>
     <script src="js/script.js"></script>
 </body>
