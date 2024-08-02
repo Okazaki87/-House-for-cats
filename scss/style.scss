@@ -43,6 +43,20 @@ table {
 	border-spacing: 0;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
 * {
 	box-sizing: border-box; // убираем проблему с шириной
 }
@@ -60,7 +74,7 @@ table {
     --font-famaly-accent: 'Rubik', sans-serif;
     --container-width: 1366px;
     --color-text: #1A212F;
-    --plavnay-animacia: 0.3s;
+    --plavnay-animacia: 0.5s;
     --color-krug: #FAC663;
     --background-section: #FFFEFD;
 }
@@ -85,7 +99,9 @@ table {
     padding-block: 20px;
     padding-left: 30px;
     padding-right: 63px;
+    cursor: pointer;
     transition: background-color var(--plavnay-animacia) ;
+
     &::after { // для изображения лапка
         content: '';
         height: 36px;
@@ -96,6 +112,7 @@ table {
         translate: -0% -50%;
         background: url('../img/icons/btn.svg') center/ 100% no-repeat;
     }
+
     &:hover {
         background-color: #ff5400;
         color: #fff;
@@ -123,6 +140,27 @@ a {
     text-decoration: none;
 }
 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input[type="number"]:hover,
+input[type="number"]:focus {
+  -moz-appearance: number-input;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
 
 @import "blocks/header";
 @import "blocks/banner";
@@ -133,4 +171,5 @@ a {
 @import "blocks/footer";
 @import "blocks/politika";
 @import "blocks/hamburger";
+@import "blocks/modal";
 @import "blocks/media";
