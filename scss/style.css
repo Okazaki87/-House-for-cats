@@ -952,8 +952,7 @@ input {
     margin-bottom: 0;
   }
   .modal__btn {
-    padding-inline: 20px 65px;
-    width: 220px;
+    width: 100%;
   }
   .modal__btn::after {
     right: 20px;
