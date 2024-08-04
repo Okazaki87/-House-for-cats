@@ -938,7 +938,7 @@ input {
     padding-block: 20px;
   }
   .modal {
-    width: 300px;
+    width: 350px;
     height: 520px;
   }
   .modal__form {
@@ -959,6 +959,12 @@ input {
   }
   input {
     height: 55px;
+  }
+}
+@media (max-width: 400px) {
+  .modal {
+    width: 300px;
+    height: 520px;
   }
 }
 @media (max-width: 320px) {
